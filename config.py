@@ -3,6 +3,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DISCORD_TOKEN = os.getenv('BOT_TOKEN')
+BOT_TOKEN = os.getenv('BOT_TOKEN')
 LLMSTUDIO_BASE_URL = "http://192.168.1.186:1234/v1"  # Default LM Studio endpoint
 LLMSTUDIO_MODEL = "phi-4"  # Your local model name
