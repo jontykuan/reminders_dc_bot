@@ -2,3 +2,4 @@ discord.py==2.4.0
 langchain==0.0.10  # or the latest version you are using
 APScheduler==3.11.0
 python-dotenv  # For loading environment variables from .env file
+langchain_openai
