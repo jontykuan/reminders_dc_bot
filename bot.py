@@ -11,7 +11,7 @@ from config import LLMSTUDIO_BASE_URL, LLMSTUDIO_MODEL
 import re
 
 class WritingBot(commands.Bot):
-    def __init__(self):
+    def __init__(self, port: int):
         intents = discord.Intents.default()
         intents.message_content = True
         super().__init__(command_prefix='!', intents=intents)
