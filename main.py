@@ -3,8 +3,10 @@ import threading
 import asyncio
 from bot import WritingBot
 from config import BOT_TOKEN
+import os
 
 app = Flask(__name__)
+
 bot = WritingBot()
 
 # Flask 路由設定（簡單的健康檢查）
