@@ -16,6 +16,7 @@ class WritingBot(commands.Bot):
         intents.message_content = True
         super().__init__(command_prefix='!', intents=intents)
         
+        # 初始化內部變數
         self.prompts = self.load_prompts()
         self.scheduler = AsyncIOScheduler()
         self.llm = ChatOpenAI(
