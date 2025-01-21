@@ -11,11 +11,12 @@ from config import LLMSTUDIO_BASE_URL, LLMSTUDIO_MODEL
 import re
 
 class WritingBot(commands.Bot):
-    def __init__(self, port: int):
+    def __init__(self):
         intents = discord.Intents.default()
         intents.message_content = True
         super().__init__(command_prefix='!', intents=intents)
         
+        # 初始化內部變數
         self.prompts = self.load_prompts()
         self.scheduler = AsyncIOScheduler()
         self.llm = ChatOpenAI(
